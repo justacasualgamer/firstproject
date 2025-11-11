@@ -1,0 +1,11 @@
+button {
+    display: block;
+}
+textarea {
+    resize: none;
+    width: 400px;
+    height: 200px;
+}
+h1 {
+    font-family: 'Comic Sans MS';
+}

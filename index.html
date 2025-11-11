@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first project on GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function text() {
+            const textarea = document.getElementById('textarea').value;
+            
+            if (textarea == "") {
+                document.getElementById('h1').innerText = "You didn't write anything...";
+                alert("nothing? just NOTHING?? REALLY DUDE?")
+                document.getElementById('textarea').placeholder = "you left me empty just like how you answer the question \"how many girlfriends you had?\"";
+            }
+            else {
+                document.getElementById('h1').innerText = "You wrote: " + textarea;
+                alert("Text changed!")
+                document.getElementById('textarea').placeholder = "Oh great, you pressed the button. Reasonable reaction.";
+            }            
+        }
+    </script>
+    <noscript>
+        <h1>no javascript detected. that's lame, you know. get outta here</h1>
+    </noscript>
+</head>
+<body>
+    <h1 id="h1">This is a text. What did you expect to be here?</h1>
+    <textarea name="textarea" id="textarea" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit."></textarea>
+    <button onclick="text()">hello me is a button :D</button>
+</body>
+</html>
